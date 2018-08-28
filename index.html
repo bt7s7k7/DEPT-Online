@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script src="stuff/bUtils.js"></script>
+	<script src="stuff/nodeGraph.js"></script>
+	<script src="stuff/bFlow.js"></script>
+	<script src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="stuff/btStyle.css">
+	<script>
+		
+	</script>
+</head>
+<body>
+	<div style="width:100%;left:0px;top:8px;min-height:10px;border-bottom: solid 1px black;margin-bottom:10px" id="maxParent">
+
+	</div>
+	<input id="typeToAdd" list="types" onkeyup="validate(event)" style="background-color: #ffeeee" onmousedown="this.value = ''">
+	<datalist id="types"></datalist>
+	<button onclick="add()" id="addButton" disabled>Add</button>
+	<button onclick="if (confirm('Really?')) reset()">Reset</button>
+
+
+</body>
+</html>
